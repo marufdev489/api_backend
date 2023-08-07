@@ -3,9 +3,9 @@ const { getAboutUsData, addAboutUsData, deleteAboutUsData, updateAboutUsData } =
 
 const aboutUsRoute = express.Router();
 
-aboutUsRoute.get("/aboutUs", getAboutUsData);
-aboutUsRoute.post("/aboutUs", addAboutUsData);
-aboutUsRoute.put("/aboutUs/:id", updateAboutUsData);
-aboutUsRoute.delete("/aboutUs/:id", deleteAboutUsData);
+aboutUsRoute.get("/aboutUs", getAboutUsData); //shows all data
+aboutUsRoute.post("/aboutUs", addAboutUsData); //creates a data
+aboutUsRoute.put("/aboutUs/:id", updateAboutUsData); //update a single data
+aboutUsRoute.delete("/aboutUs/:id", deleteAboutUsData); //delete a single data
 
-module.exports = aboutUsRoute;
+module.exports = aboutUsRoute; 

@@ -32,6 +32,10 @@ const homeSchema = new mongoose.Schema({
           required: [true, "Please enter the required field!"],
           trim: true
         },
+        num_of_exp:{
+          type: Number,
+          default: 7
+        },
         team_members: {
           type: Number,
           default: 30,
@@ -70,7 +74,7 @@ const homeSchema = new mongoose.Schema({
               required: [true, "Please enter the required field!"],
               trim: true
             },
-            background_image: {
+            image: {
               data: Buffer,
               contentType: String
             },
@@ -97,10 +101,6 @@ const homeSchema = new mongoose.Schema({
               required: [true, "Please enter the required field!"],
               trim: true
             },
-            image: {
-              data: Buffer,
-              contentType: String
-            },
         }],
     },
     sectionFive: {
@@ -115,7 +115,7 @@ const homeSchema = new mongoose.Schema({
               required: [true, "Please enter the required field!"],
               trim: true
             },
-            keyword: [{
+            keywords: [{
                 type: String,
                 required: [true, "Please enter the required field!"],
                 trim: true
@@ -140,6 +140,11 @@ const homeSchema = new mongoose.Schema({
         background_image: {
             data: Buffer,
             contentType: String
+        },
+        main_description: {
+          type: String,
+          required: [true, "Please enter the required field!"],
+          trim: true
         },
         content: [{
             sub_title: {
@@ -193,11 +198,6 @@ const homeSchema = new mongoose.Schema({
               trim: true
             },
             sub_title_two: {
-                type: String,
-                required: [true, "Please enter the required field!"],
-                trim: true
-            },
-            short_description: {
                 type: String,
                 required: [true, "Please enter the required field!"],
                 trim: true

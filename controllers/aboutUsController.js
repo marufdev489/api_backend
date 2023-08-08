@@ -1,4 +1,3 @@
-const mongoose = require("mongoose");
 const AboutUs = require("../models/AboutUs");
 
 /* This function retrieves the data for the About Us page from the database and returns it as a JSON object. */

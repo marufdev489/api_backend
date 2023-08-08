@@ -8,4 +8,4 @@ aboutUsRoute.post("/aboutUs", addAboutUsData); //creates a data
 aboutUsRoute.put("/aboutUs/:id", updateAboutUsData); //update a single data
 aboutUsRoute.delete("/aboutUs/:id", deleteAboutUsData); //delete a single data
 
-module.exports = aboutUsRoute; 
+module.exports = aboutUsRoute;

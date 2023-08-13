@@ -110,7 +110,7 @@ const serviceSchema = new mongoose.Schema({
           required: [true, "Please enter the required field!"],
           trim: true
         },
-        image: [{
+        images: [{
             data: Buffer,
             contentType: String
         }],

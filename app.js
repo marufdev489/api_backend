@@ -12,6 +12,9 @@ const letsTalkRoute = require("./routes/letsTalkRoute");
 const homeContactRoute = require("./routes/homeContactRoute");
 const categoryContentRoute = require("./routes/categoryContentRoute");
 const portfolioCategoryRoute = require("./routes/portfolioCategoryRoute");
+const serviceRoute = require("./routes/serviceRoute");
+const productRoute = require("./routes/productRoute");
+const productDetailsRoute = require("./routes/productDetailsRoute");
 
 const app = express();
 app.use(express.json());
@@ -26,5 +29,8 @@ app.use("/api",letsTalkRoute);
 app.use("/api",homeContactRoute);
 app.use("/api",portfolioCategoryRoute); 
 app.use("/api",categoryContentRoute); 
+app.use("/api",serviceRoute); 
+app.use("/api",productRoute); 
+app.use("/api",productDetailsRoute); 
 
 module.exports = app;

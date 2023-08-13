@@ -15,6 +15,8 @@ const portfolioCategoryRoute = require("./routes/portfolioCategoryRoute");
 const serviceRoute = require("./routes/serviceRoute");
 const productRoute = require("./routes/productRoute");
 const productDetailsRoute = require("./routes/productDetailsRoute");
+const blogCategoryRoute = require("./routes/blogCategoryRoute");
+const blogCategoryContentRoute = require("./routes/blogCategoryContentRoute");
 
 const app = express();
 app.use(express.json());
@@ -32,5 +34,7 @@ app.use("/api",categoryContentRoute);
 app.use("/api",serviceRoute); 
 app.use("/api",productRoute); 
 app.use("/api",productDetailsRoute); 
+app.use("/api",blogCategoryRoute); 
+app.use("/api",blogCategoryContentRoute); 
 
 module.exports = app;

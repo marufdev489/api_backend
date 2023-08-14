@@ -17,6 +17,7 @@ const productRoute = require("./routes/productRoute");
 const productDetailsRoute = require("./routes/productDetailsRoute");
 const blogCategoryRoute = require("./routes/blogCategoryRoute");
 const blogCategoryContentRoute = require("./routes/blogCategoryContentRoute");
+const blogPageRoute = require("./routes/blogPageRoute");
 
 const app = express();
 app.use(express.json());
@@ -34,6 +35,7 @@ app.use("/api",categoryContentRoute);
 app.use("/api",serviceRoute); 
 app.use("/api",productRoute); 
 app.use("/api",productDetailsRoute); 
+app.use("/api",blogPageRoute); 
 app.use("/api",blogCategoryRoute); 
 app.use("/api",blogCategoryContentRoute); 
 
